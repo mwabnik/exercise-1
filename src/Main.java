@@ -21,6 +21,10 @@ public class Main {
 
         SimpleDataType simpleDataType = new SimpleDataType();
         simpleDataType.test(1, 2.425);
+        simpleDataType.getStringLength("Warszawa");
+        simpleDataType.getIsEmpty("Warszawa");
+        simpleDataType.getIsEmpty("");
+        simpleDataType.getUpperCase("Warszawa");
 
 
     }

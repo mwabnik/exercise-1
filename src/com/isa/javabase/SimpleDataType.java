@@ -11,4 +11,13 @@ public class SimpleDataType {
         result = (int) (a + b);
         System.out.println(monday);
     }
+    public void getStringLength (String text) {
+        System.out.println(text.length());
+    }
+    public void getIsEmpty (String text) {
+        System.out.println(text.isEmpty());
+    }
+    public void getUpperCase (String text) {
+        System.out.println(text.toUpperCase());
+    }
 }
