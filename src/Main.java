@@ -1,5 +1,6 @@
 import com.isa.javabase.Adres;
 import com.isa.javabase.Person;
+import com.isa.javabase.SimpleDataType;
 import com.isa.javabase.StaticExamples;
 
 public class Main {
@@ -17,5 +18,10 @@ public class Main {
         StaticExamples static1 = new StaticExamples();
         System.out.println(StaticExamples.staticMethod());
         static1.instanceMethod();
+
+        SimpleDataType simpleDataType = new SimpleDataType();
+        simpleDataType.test(1, 2.425);
+
+
     }
 }
