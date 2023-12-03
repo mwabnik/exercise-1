@@ -1,7 +1,4 @@
-import com.isa.javabase.Adres;
-import com.isa.javabase.Person;
-import com.isa.javabase.SimpleDataType;
-import com.isa.javabase.StaticExamples;
+import com.isa.javabase.*;
 
 import java.util.Scanner;
 
@@ -33,5 +30,7 @@ public class Main {
         String line = scanner.nextLine();
         System.out.println("Podajna wartość to: " + line);
 
+        DataManipulation dataManipulation = new DataManipulation();
+        dataManipulation.getResult();
     }
 }
