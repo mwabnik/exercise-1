@@ -28,9 +28,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Podaj tekst: ");
         String line = scanner.nextLine();
-        System.out.println("Podajna wartość to: " + line);
+        System.out.println("Podana wartość to: " + line);
 
         DataManipulation dataManipulation = new DataManipulation();
         dataManipulation.getResult();
+
+        Conditions condition = new Conditions();
+        condition.getResults();
     }
 }
