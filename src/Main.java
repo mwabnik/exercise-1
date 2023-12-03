@@ -26,6 +26,5 @@ public class Main {
         simpleDataType.getIsEmpty("");
         simpleDataType.getUpperCase("Warszawa");
 
-
     }
 }
