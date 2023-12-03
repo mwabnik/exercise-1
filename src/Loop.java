@@ -9,7 +9,7 @@ public class Loop {
 //        System.out.println("Imona to: ");
 //        loop.ex3();
 //        loop.ex4();
-        loop.doWhileLoop();
+        loop.doWhileWithContinue();
 
     }
     public void forLoop1() {
@@ -41,6 +41,16 @@ public class Loop {
         do {
             System.out.println(i);
             i++;
+        } while (i < 10);
+    }
+    public void doWhileWithContinue() {
+        int i =1;
+        do {
+            i++;
+            if (i == 4) {
+                System.out.println("Przerwa w iteracji");
+                continue;
+            }
         } while (i < 10);
     }
 }
