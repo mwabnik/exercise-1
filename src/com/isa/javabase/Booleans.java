@@ -1,6 +1,6 @@
 package com.isa.javabase;
 
-public class Conditions {
+public class Booleans {
     boolean x = false;
     boolean y = false;
     boolean z = true;

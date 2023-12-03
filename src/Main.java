@@ -32,7 +32,7 @@ public class Main {
         DataManipulation dataManipulation = new DataManipulation();
         dataManipulation.getResult();
 
-        Conditions condition = new Conditions();
+        Booleans condition = new Booleans();
         condition.getResults();
     }
 }
