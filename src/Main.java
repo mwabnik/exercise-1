@@ -4,35 +4,26 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        System.out.print("Text 1");
-        System.out.println("Text 2");
-
-        Adres adres1 = new Adres("Warszawa", "Mazowiecka",12);
-        System.out.println("Miasto: " + adres1.getCity() + ", ulica: " + adres1.getStreet() + " " + adres1.getNumber());
-        Person person1 = new Person("Michal", 38, adres1);
-        System.out.println(person1.getNameAndAgeAndCity() + ", ulica: " + person1.getAdres().getCity() + " " + person1.getAdres().getNumber());
-
-        StaticExamples static1 = new StaticExamples();
-        System.out.println(StaticExamples.staticMethod());
-        static1.instanceMethod();
-
-        SimpleDataType simpleDataType = new SimpleDataType();
-        simpleDataType.test(1, 2.425);
-        simpleDataType.getStringLength("Warszawa");
-        simpleDataType.getIsEmpty("Warszawa");
-        simpleDataType.getIsEmpty("");
-        simpleDataType.getUpperCase("Warszawa");
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Podaj tekst: ");
-        String line = scanner.nextLine();
-        System.out.println("Podana wartość to: " + line);
-
-        DataManipulation dataManipulation = new DataManipulation();
-        dataManipulation.getResult();
-
-        Booleans condition = new Booleans();
-        condition.getResults();
+        Person person1 = new Person("Jolka",75, new Adres("Jakies", "Jakaś", 45));
+        Person person2 = new Person("Jurek", 45, new Adres("Mazowiecka", "Legiownow", 1));
+        Teacher teacher1 = new Teacher("Jolka",75, new Adres("Jakies", "Jakaś",45));
+        Teacher teacher2 = new Teacher("Jolka",75, new Adres("Jakies", "Jakaś",45));
+        //teacher.work();
+        Fireman fireman = new Fireman();
+        //fireman.work();
+//
+//        Person[] osoby = {person, teacher, fireman};
+//        for (Person costam: osoby){
+//            costam.work();
+//            costam.toString();
+//        }
+        boolean equals1 = person2.equals(person1);
+        boolean equals2 = person1.equals(person1);
+        boolean equals3 = teacher1.equals(person1);
+        boolean equals4 = teacher1.equals(teacher2);
+        System.out.println(equals1);
+        System.out.println(equals2);
+        System.out.println(equals3);
+        System.out.println(equals4);
     }
 }
